@@ -31,29 +31,37 @@ function Form() {
       <div className=" h-36 w-5/6 bg-green-400 mx-auto mt-6 rounded">
         <h2 className="text-center pt-2 font-bold">Create Cookie Stand</h2>
 
-        <label className="pl-4 pr-2 w-full">
+        <label className="pl-4 pr-2 w-full text-xs md:text-base">
           Location
           <input type="text" className="w-5/6 m-2"></input>
         </label>
 
         <div className="flex flex-row pl-4 pr-4">
           <div className="w-1/4">
-            <p className="text-center">Minimum Customers per Hour</p>
+            <p className="text-center text-xs md:text-base">
+              Minimum Customers per Hour
+            </p>
             <input type="integer" className="w-full"></input>
           </div>
 
           <div className="pl-4 w-1/4">
-            <p className="text-center">Maximum Customers per Hour</p>
+            <p className="text-center text-xs md:text-base">
+              Maximum Customers per Hour
+            </p>
             <input type="integer" className="w-full"></input>
           </div>
 
           <div className="pl-4 w-1/4">
-            <p className="text-center">Average Cookies per Sale</p>
+            <p className="text-center text-xs md:text-base">
+              Average Cookies per Sale
+            </p>
             <input type="integer" className="w-full"></input>
           </div>
 
           <div className="pl-4 w-1/4">
-            <button className="bg-green-600 w-full pr-6 h-14">Create</button>
+            <button className="bg-green-600 w-full pr-6 h-14 text-xs md:text-base">
+              Create
+            </button>
           </div>
         </div>
       </div>
