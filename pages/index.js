@@ -1,9 +1,9 @@
 import Head from "next/head";
-import CreateForm from "../components/CreateForm";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
+import CreateForm from "../components/CreateForm";
 import Main from "../components/Main";
 import ReportTable from "../components/ReportTable";
+import Footer from "../components/Footer";
 import { hourly_sales } from "../data";
 
 export default function Home() {
@@ -24,8 +24,8 @@ export default function Home() {
           hourly_sales={hourly_sales}
           onStandCreated={handleStandCreated}
         />
-        <Main reports={[]} />
-        <Footer />
+        <Main reports={[1]} />
+        <Footer count={0} />
       </body>
     </div>
   );
