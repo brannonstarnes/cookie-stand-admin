@@ -7,11 +7,6 @@ import Footer from "../components/Footer";
 import { hourly_sales } from "../data";
 
 export default function Home() {
-  function handleStandCreated(stand) {
-    alert(stand);
-    // need to figure out where to save the report then pass into Main as props
-  }
-
   return (
     <div>
       <Head>
@@ -20,11 +15,8 @@ export default function Home() {
 
       <body className="bg-green-50 h-screen w-screen">
         <Header />
-        <CreateForm
-          hourly_sales={hourly_sales}
-          onStandCreated={handleStandCreated}
-        />
-        <Main reports={[1]} />
+
+        <Main />
         <Footer count={0} />
       </body>
     </div>

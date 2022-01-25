@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { hours } from "../data";
 
 const stand = {
   location: "",
@@ -8,20 +9,8 @@ const stand = {
 };
 
 export default function CreateForm(props) {
-  const [value, setValues] = useState(stand);
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const { name, value } = event.target;
-
-    const stand = setValues({
-      ...setValues,
-      [name]: value,
-    });
-  }
-
   return (
-    <form name="stand" onSubmit={handleSubmit}>
+    <form name="stand" onSubmit={props.handleStandCreated}>
       <div className=" h-36 w-2/3 bg-green-400 mx-auto mt-6 rounded">
         <h2 className="text-center pt-2 font-bold">Create Cookie Stand</h2>
 
