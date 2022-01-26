@@ -11,30 +11,26 @@ export default function Main() {
     const [location, minCustomers, maxCustomers, avgCookies] = event.target;
 
     let standDailyTotal = 0;
-    const hourlySale = hours.map((hour) => {
-      const randomCustomers =
-        Math.floor(
-          Math.random() * (maxCustomers.value - minCustomers.value + 1)
-        ) + minCustomers.value;
-
-      const cookiesSold = randomCustomers * avgCookies.value;
+    const hourlySale = hours.map((sale) => {
+      const cookiesSold = Math.floor((Math.random() * ((maxCustomers.value - minCustomers.value) + 1) + minCustomers.value) * avgCookies.value);
+      
       standDailyTotal = standDailyTotal + cookiesSold;
-      return cookiesSold;
+      
+      return cookiesSold
     });
 
     const standData = {
       location: location.value,
       hourlySale: hourlySale,
       standDailyTotal: standDailyTotal,
+      id: allStandData.length
     };
     setAllStandData([...allStandData, standData]);
   }
 
   return (
     <>
-      <CreateForm
-        hourly_sales={hourly_sales}
-        handleStandCreated={handleStandCreated}
+      <CreateForm handleStandCreated={handleStandCreated}
       />
       <ReportTable data={allStandData} />
     </>

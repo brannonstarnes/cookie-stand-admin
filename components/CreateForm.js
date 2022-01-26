@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { hours } from "../data";
 
-const stand = {
-  location: "",
-  minCustomers: "",
-  maxCustomers: "",
-  avgCookies: "",
-};
+// const stand = {
+//   location: "",
+//   minCustomers: "",
+//   maxCustomers: "",
+//   avgCookies: "",
+// };
 
 export default function CreateForm(props) {
   return (
