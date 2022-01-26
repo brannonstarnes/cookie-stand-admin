@@ -1,0 +1,9 @@
+{
+  "stand": {
+    "location": "Barcelona",
+    "minCustomer": 4,
+    "maxCustomer": 7,
+    "avgCookies": 5,
+    "hourly_sales": [48, 42, 30, 14, 41, 14, 36, 41, 41, 48, 36, 42, 24, 36]
+  }
+}
