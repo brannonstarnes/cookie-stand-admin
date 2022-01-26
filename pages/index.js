@@ -17,7 +17,7 @@ export default function Home() {
         <Header />
 
         <Main />
-        <Footer count={0} />
+       
       </body>
     </div>
   );
