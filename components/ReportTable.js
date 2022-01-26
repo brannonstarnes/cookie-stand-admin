@@ -53,11 +53,11 @@ function lastRow(data){
           <tbody className="border text-center">
                      
               {props.data.map((stand) => (
-                <tr>
+                <tr key={stand.id}>
                   <td key={stand.id} className="m-2 w-8 border" type="text">
                     {stand.location}
                   </td>
-                  {stand.hourlySale.map(sale => (<td className="m-2 w-8 border">{sale}</td>))}
+                  {stand.hourlySale.map(sale => (<td key={stand.id} className="m-2 w-8 border">{sale}</td>))}
                   <td key={stand.id} className="m-2 w-8 border">{totalSales(stand.hourlySale)}</td>
                 </tr>
                 ))}
