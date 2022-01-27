@@ -1,6 +1,6 @@
 export default function LoginPage({onLogin}) {
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
       e.preventDefault();
       onLogin(e.target.username.value, e.target.password.value);
     }

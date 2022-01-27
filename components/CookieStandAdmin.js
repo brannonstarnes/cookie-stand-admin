@@ -1,17 +1,18 @@
-import Head from "next/head"
+import useResource from "../hooks/useResource"
+import CreateForm from "./CreateForm";
+import ReportTable from "./ReportTable";
 import Header from "./Header"
-import Main from "./Main"
-
+import Footer from "./Footer"
 export default function CookieStandAdmin(){
+
+    const {resources, deleteResource} = useResource();
 
 return (
     <body>
-    <Head>
-        <title>Cookie Stand Admin</title>
-    </Head>
     <Header />
-    <Main />
-    
+    <CreateForm />
+    <ReportTable stands={resources || []} deleteStand={deleteResource} />
+    <Footer count={resources.length}/>
     </body>
     )
 }
