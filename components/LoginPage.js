@@ -6,18 +6,16 @@ export default function LoginPage({onLogin}) {
     }
  
     return (
-      <form onSubmit={handleSubmit} autoComplete="off">
-        <fieldset>
-          <legend>Login</legend>
+      <form className="text-center items-center justify-center"onSubmit={handleSubmit} autoComplete="off">
+        
+          <h2 className="font-bold" htmlFor="username">USERNAME</h2>
+          <input className="w-2/3 " type="text" placeholder="Username" name="username" />
 
-          <label htmlFor="username">Username:</label>
-          <input type="text" name="username" />
+          <h2 className="font-bold" htmlFor="password">PASSWORD</h2>
+          <input className="w-2/3" type="text" placeholder="Password" name="password" />
 
-          <label htmlFor="password">Password:</label>
-          <input type="text" name="password" />
-
-          <button>Sign In</button>
-        </fieldset>
+          <h2><button className="bg-green-700 w-2/3 mt-4 h-10 font-bold">SIGN IN</button></h2>
+        
       </form>
     );
   }

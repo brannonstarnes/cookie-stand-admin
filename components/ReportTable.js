@@ -21,7 +21,6 @@ function lastRowTotals(data){
   let grandArray = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
   for (let i = 0; i < data.length; i++) {
     let currentStand = data[i]
-    console.log(currentStand)
     for (let j = 0; j < currentStand.hourly_sales.length; j++){
       grandArray[j] += currentStand.hourly_sales[j]
     } 
@@ -74,4 +73,3 @@ function lastRowTotals(data){
   }
 }
 
-// need to get location and hourly_sales data from a report

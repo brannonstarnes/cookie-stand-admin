@@ -12,7 +12,8 @@ return (
     <Header />
     <CreateForm />
     <ReportTable stands={resources || []} deleteStand={deleteResource} />
-    <Footer count={resources.length}/>
+    {console.log(resources)}
+    <Footer resources={resources}/>
     </body>
     )
 }
