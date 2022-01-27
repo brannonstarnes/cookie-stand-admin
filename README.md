@@ -2,16 +2,10 @@
 
 ## About
 
-Currently creates a static admin site for a Cookie Stand.
+This API serves as an Admin site for a worldwide cookie-stand company. Currently the site allows any user to create a cookie stand location, input stand data, and tabulate estimated sales results for each cookie stand. In the near future, the site will only allow users with admin rights to sign in and manipulate the stand data.  
 
-## Getting Started
+## On the Web
 
-First, run the development server:
+Please visit my site by clicking [here](https://cookie-stand-admin-nsnyi6pmz-brannonstarnes.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
