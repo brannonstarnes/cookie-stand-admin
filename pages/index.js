@@ -9,7 +9,7 @@ export default function Home() {
   const { user, login } = useAuth();
 
   return (
-    <div className="p-4 bg-green-200">
+    <div className="p-4 bg-green-200 h-screen text-center flex w-screen">
       <Head>
           <title>Cookie Stand Admin</title>
       </Head>

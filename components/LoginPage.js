@@ -6,7 +6,7 @@ export default function LoginPage({onLogin}) {
     }
  
     return (
-      <form className="text-center items-center justify-center"onSubmit={handleSubmit} autoComplete="off">
+      <form className="text-center items-center w-screen" onSubmit={handleSubmit} autoComplete="off">
         
           <h2 className="font-bold" htmlFor="username">USERNAME</h2>
           <input className="w-2/3 " type="text" placeholder="Username" name="username" />
