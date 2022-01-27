@@ -6,6 +6,6 @@ This API serves as an Admin site for a worldwide cookie-stand company. The site 
 
 ## On the Web
 
-Please visit my site by clicking [here](https://cookie-stand-admin-nsnyi6pmz-brannonstarnes.vercel.app/)
+Please visit my site by clicking [here](https://cookie-stand-admin-snowy.vercel.app/)
 
  
