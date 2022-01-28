@@ -1,16 +1,25 @@
-import { useState } from "react";
-import { hours } from "../data";
-
-// const stand = {
-//   location: "",
-//   minCustomers: "",
-//   maxCustomers: "",
-//   avgCookies: "",
-// };
+import { useAuth } from "../contexts/auth";
+import useResource from "../hooks/useResource";
 
 export default function CreateForm(props) {
+
+  const {user} = useAuth();
+  const {createResource} = useResource();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const standInfo = {
+      location: e.target.location.value,
+      minCustomers: parseInt(e.target.minCustomers.value),
+      maxCustomers: parseInt(e.target.maxCustomers.value),
+      avgCookies: parseFloat(e.target.avgCookies.value),
+      owner: user.id,
+    }
+    createResource(standInfo);
+  }
+
   return (
-    <form name="stand" onSubmit={props.handleStandCreated}>
+    <form name="stand" onSubmit={handleSubmit}>
       <div className=" h-36 w-2/3 bg-green-400 mx-auto mt-6 rounded">
         <h2 className="text-center pt-2 font-bold">Create Cookie Stand</h2>
 
